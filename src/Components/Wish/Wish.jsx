@@ -1,11 +1,9 @@
-import { GoPeople } from "react-icons/go";
 import { Link } from "react-router-dom";
-// import { MdOutlineFindInPage } from "react-icons/go";
-const Read = ({ book }) => {
-    console.log(book);
-    const {bookId, image, bookName, author, tags, category, totalPages, rating, publisher } = book
+import { GoPeople } from "react-icons/go";
+const Wish = ({ books }) => {
+    console.log(books);
+    const { bookId, image, bookName, author, tags, category, totalPages, rating, publisher } = books
     return (
-
         <div className="flex gap-5 p-5 rounded-xl border-slate-100 border-2">
             <div className="bg-slate-200 px-16 py-8 rounded-2xl">
                 <img src={image} alt="" />
@@ -47,8 +45,7 @@ const Read = ({ book }) => {
                 </div>
             </div>
         </div>
-
     );
 };
 
-export default Read;
+export default Wish;
