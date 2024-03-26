@@ -1,0 +1,80 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Rise and Fall of the Turkish Empire",
+        "author": "Lord Kinross",
+        "image": "https://i.ibb.co/fDJbhDV/Book1.png",
+        "review": "A comprehensive and insightful account of the Ottoman Empire, detailing its rise to power, its cultural achievements, and its eventual decline. Kinross' narrative style makes this complex history accessible to readers of all backgrounds.",
+        "totalPages": 640,
+        "rating": 4.5,
+        "category": "History",
+        "tags": ["Empire", "Historical"],
+        "publisher": "Morrow",
+        "yearOfPublishing": 1977
+    },
+    {
+        "bookId": 2,
+        "bookName": "The Ottoman Empire: A Short History",
+        "author": "Suraiya Faroqhi",
+        "image": "https://i.ibb.co/S3khGNt/Book2.png",
+        "review": "Faroqhi presents a concise yet informative overview of the Ottoman Empire, covering its major events, cultural developments, and legacy. Ideal for readers seeking a brief introduction to this vast and influential empire.",
+        "totalPages": 224,
+        "rating": 4.2,
+        "category": "History",
+        "tags": ["Empire", "Overview"],
+        "publisher": "Markus Wiener Publishers",
+        "yearOfPublishing": 2009
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Ottoman Empire, 1700-1922",
+        "author": "Donald Quataert",
+        "image": "https://i.ibb.co/HNDZ6x3/Book3.png",
+        "review": "Quataert provides a detailed examination of the Ottoman Empire's later period, exploring its social, economic, and political dynamics. A valuable resource for anyone seeking a deeper understanding of this crucial era in Ottoman history.",
+        "totalPages": 272,
+        "rating": 4.3,
+        "category": "History",
+        "tags": ["Empire", "Social History"],
+        "publisher": "Cambridge University Press",
+        "yearOfPublishing": 2005
+    },
+    {
+        "bookId": 4,
+        "bookName": "The Ottoman Empire: The Classical Age 1300–1600",
+        "author": "Halil İnalcık",
+        "image": "https://i.ibb.co/0y5X6c6/Book4.png",
+        "review": "İnalcık's scholarly work offers a comprehensive analysis of the classical age of the Ottoman Empire, shedding light on its institutional development, cultural achievements, and interactions with neighboring powers.",
+        "totalPages": 272,
+        "rating": 4.4,
+        "category": "History",
+        "tags": ["Empire", "Cultural History"],
+        "publisher": "Phoenix",
+        "yearOfPublishing": 1973
+    },
+    {
+        "bookId": 5,
+        "bookName": "Osman's Dream: The History of the Ottoman Empire",
+        "author": "Caroline Finkel",
+        "image": "https://i.ibb.co/1GhZQQY/Book5.png",
+        "review": "Finkel's book is a captivating journey through the history of the Ottoman Empire, offering fresh insights and perspectives on its rulers, society, and cultural achievements. A must-read for anyone interested in the Ottoman era.",
+        "totalPages": 672,
+        "rating": 4.6,
+        "category": "History",
+        "tags": ["Empire", "Cultural History"],
+        "publisher": "Basic Books",
+        "yearOfPublishing": 2005
+    },
+    {
+        "bookId": 6,
+        "bookName": "A Peace to End All Peace: The Fall of the Ottoman Empire and the Creation of the Modern Middle East",
+        "author": "David Fromkin",
+        "image": "https://i.ibb.co/3YKr9Hg/Book6.png",
+        "review": "Fromkin's work offers a thought-provoking analysis of the fall of the Ottoman Empire and its repercussions on the modern Middle East. Through meticulous research and engaging prose, he explores the complex web of events that shaped the region's destiny.",
+        "totalPages": 624,
+        "rating": 4.5,
+        "category": "History",
+        "tags": ["Empire", "Middle East"],
+        "publisher": "Holt Paperbacks",
+        "yearOfPublishing": 1989
+    }
+]
