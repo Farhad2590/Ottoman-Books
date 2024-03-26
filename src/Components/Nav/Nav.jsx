@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <div className="flex justify-between items-center bg-base-100 pt-5">
+        <div className="flex justify-between items-center bg-base-100 pt-5 pb-5">
             <div className="">
                 <a className="btn btn-ghost text-xl">Book Vibe</a>
             </div>

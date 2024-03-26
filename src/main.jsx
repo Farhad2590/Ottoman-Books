@@ -11,6 +11,8 @@ import './index.css'
 import ListedBooks from './Pages/ListedBooks.jsx';
 import Pagestoread from './Pages/Pagestoread.jsx';
 import BookInfo from './Pages/BookInfo.jsx'
+import ReadBooks from './Components/ReadBooks/ReadBooks.jsx';
+import WishListBooks from './Components/WishLisBooks/WishListBooks.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,16 @@ const router = createBrowserRouter([
       {
         path:"/listedBooks",
         element: <ListedBooks></ListedBooks>,
+        children: [
+          {
+            index:true,
+            element:<ReadBooks></ReadBooks>,
+          },
+          {
+            path: 'wishlist',
+            element: <WishListBooks></WishListBooks>
+          }
+        ]
       },
       {
         path:"/pagestoread",
@@ -33,8 +45,8 @@ const router = createBrowserRouter([
       {
         path:"/cards/:bookId",
         element:<BookInfo></BookInfo>,
-        loader: () => fetch(`data.json`)
-
+        loader: () => fetch(`/public/data.json`)
+        
       }
     ]
   },

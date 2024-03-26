@@ -4,14 +4,12 @@ import { useLoaderData, useParams } from "react-router-dom";
 const BookInfo = () => {
     const bookInfo = useLoaderData()
     const { bookId } = useParams()
-    console.log("Book ID:", bookId);
-    console.log("Book Info:", bookInfo);
     const parsedBookId = parseInt(bookId);
     const book = bookInfo.find(book => book.bookId === parsedBookId);
-    console.log("Found Book:", book);
+
     const { bookName, image, author, tags, category, yearOfPublishing, totalPages, rating, publisher, review } = book;
     return (
-        <div className="flex w-full gap-5 justify-center-center">
+        <div className="mx-auto w-[90%] flex  gap-5 justify-center-center">
             <div className="w-[50%] flex items-center justify-center p-10 bg-gray-200  rounded-lg">
                 <img className="w-52" src={image} alt="" />
             </div>
