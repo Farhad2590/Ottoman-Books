@@ -1,4 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBook, saveWishBook } from "../Utilities/Utilities";
+
 
 
 const BookInfo = () => {
@@ -8,6 +10,12 @@ const BookInfo = () => {
     const book = bookInfo.find(book => book.bookId === parsedBookId);
 
     const { bookName, image, author, tags, category, yearOfPublishing, totalPages, rating, publisher, review } = book;
+    const handleReadBooks = book => {
+        saveBook(book)
+    }
+    const handleWishList = book => {
+        saveWishBook(book);
+    }
     return (
         <div className="mx-auto w-[90%] flex  gap-5 justify-center-center">
             <div className="w-[50%] flex items-center justify-center p-10 bg-gray-200  rounded-lg">
@@ -38,8 +46,8 @@ const BookInfo = () => {
                     <p>Rating : {rating}</p>
                 </div>
                 <div className="flex gap-2">
-                    <button className="btn btn-outline">Read</button>
-                    <button className="btn btn-info text-white">Wishlist</button>
+                    <button onClick={() => handleReadBooks(book)} className="btn btn-outline">Read</button>
+                    <button onClick={() => handleWishList(book)} className="btn btn-info text-white">Wishlist</button>
                 </div>
             </div>
 
