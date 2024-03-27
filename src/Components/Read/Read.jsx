@@ -1,8 +1,8 @@
 import { GoPeople } from "react-icons/go";
 import { Link } from "react-router-dom";
-// import { MdOutlineFindInPage } from "react-icons/go";
+
 const Read = ({ book }) => {
-    console.log(book);
+   
     const {bookId, image, bookName, author, tags, category, totalPages, rating, publisher } = book
     return (
 

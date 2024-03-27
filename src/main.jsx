@@ -17,12 +17,14 @@ import  { Toaster } from 'react-hot-toast';
 import DeliveryInfo from './Pages/DeliveryInfo.jsx'
 import Online from './Components/Online/Online.jsx';
 import Offline from './Components/Offline/Offline.jsx';
+import Error from './Components/Error/Error.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layouts></Layouts>,
+    errorElement:<Error></Error>,
     children: [
       {
         path: "/",
