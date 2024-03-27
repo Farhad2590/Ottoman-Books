@@ -14,6 +14,9 @@ import BookInfo from './Pages/BookInfo.jsx'
 import ReadBooks from './Components/ReadBooks/ReadBooks.jsx';
 import WishListBooks from './Components/WishLisBooks/WishListBooks.jsx';
 import  { Toaster } from 'react-hot-toast';
+import DeliveryInfo from './Pages/DeliveryInfo.jsx'
+import Online from './Components/Online/Online.jsx';
+import Offline from './Components/Offline/Offline.jsx';
 
 
 const router = createBrowserRouter([
@@ -43,6 +46,20 @@ const router = createBrowserRouter([
       {
         path:"/pagestoread",
         element:<Pagestoread></Pagestoread>,
+      },
+      {
+        path:"/deliveryInfo",
+        element:<DeliveryInfo></DeliveryInfo>,
+        children: [
+          {
+            index:true,
+            element:<Offline></Offline>,
+          },
+          {
+            path: 'online',
+            element: <Online></Online>
+          }
+        ]
       },
       {
         path:"/cards/:bookId",

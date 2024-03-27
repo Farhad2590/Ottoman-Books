@@ -26,7 +26,7 @@ const Pagestoread = () => {
     }, [])
 
     const chartData = books.map(book => ({
-        name: `${book.bookName} - Page ${book.pageNumber}`,
+        name: `${book.bookName}`,
         pages: book.totalPages
     }));
     

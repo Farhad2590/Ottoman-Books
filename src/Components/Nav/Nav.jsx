@@ -10,6 +10,8 @@ const Nav = () => {
                 <NavLink to={'/'} className={({isActive}) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Home</NavLink>
                 <NavLink to={'/listedBooks'} className={({isActive}) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Listed Books</NavLink>
                 <NavLink to={'/pagestoread'} className={({isActive}) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Pages To read</NavLink>
+                <NavLink to={'/deliveryInfo'} className={({isActive}) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Delivery Info</NavLink>
+
 
             </div>
             <div className="flex gap-3">
