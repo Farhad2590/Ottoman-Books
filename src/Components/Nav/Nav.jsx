@@ -13,10 +13,11 @@ const Nav = () => {
                             <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Home</NavLink>
                             <NavLink to={'/listedBooks'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Listed Books</NavLink>
                             <NavLink to={'/pagestoread'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Pages To read</NavLink>
+                            <NavLink to={'/bestSeller'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Best Seller</NavLink>
                             <NavLink to={'/deliveryInfo'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Delivery Info</NavLink>
                         </ul>
                     </div>
-                    <h2 className="text-lg lg:text-xl">Book Vibe</h2>
+                    <h2 className="font-bold text-lg lg:text-xl "> Books</h2>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
                     <ul className="menu menu-horizontal gap-2">

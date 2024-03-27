@@ -1,6 +1,9 @@
-# React + Vite
+# Live Link : https://assignment08-ph.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Main Features
+> People Can See Best Seller Book
+> Easily Can See Book Details
+
 
 
 

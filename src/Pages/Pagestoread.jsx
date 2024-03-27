@@ -32,7 +32,9 @@ const Pagestoread = () => {
     
     return (
         <div>
-            <h2>Bar Chart of Book Ratings</h2>
+            <div className="mb-5 flex items-center justify-center py-5 bg-gray-300 rounded-lg">
+                <h2 className="text-xl font-bold">Bar Chart Of Books Read</h2>
+            </div>
             <ResponsiveContainer width="100%" aspect={1.5}>
                 <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" />
