@@ -9,9 +9,9 @@ const DeliveryInfo = () => {
                 <div className="flex flex-col items-center gap-5">
                     <h1 className="text-green-400 text-4xl font-bold">Discover Ottoman Empire Books </h1>
                     <h2 className="text-2xl ">Available for Online Subscription and Offline Purchase</h2>
-                    <div className="text-center">
+                    {/* <div className="text-center">
                         <p>Explore our rich collection of Ottoman Empire books, offering comprehensive insights into this fascinating historical era. Whether you prefer the convenience of online access with our PDF subscription service or the tangible experience of owning physical copies, we cater to your preferences. Subscribe online for instant access to our digital library, or purchase offline books to add to your personal collection. Delve into the captivating narratives and scholarly analyses of the Ottoman Empire's rise, achievements, and legacy with ease and flexibility.</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="flex items-center overflow-x-auto overflow-y-hidden  flex-nowrap dark:bg-gray-100 sm:justify-center dark:text-gray-800">

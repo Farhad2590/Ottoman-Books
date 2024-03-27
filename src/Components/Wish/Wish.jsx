@@ -4,7 +4,7 @@ const Wish = ({ books }) => {
     console.log(books);
     const { bookId, image, bookName, author, tags, category, totalPages, rating, publisher } = books
     return (
-        <div className="flex gap-5 p-5 rounded-xl border-slate-100 border-2">
+        <div className="flex flex-col lg:flex-row gap-5 p-5 rounded-xl border-slate-100 border-2">
             <div className="bg-slate-200 px-16 py-8 rounded-2xl">
                 <img src={image} alt="" />
             </div>

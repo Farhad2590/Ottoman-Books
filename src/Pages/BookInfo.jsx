@@ -17,11 +17,11 @@ const BookInfo = () => {
         saveWishBook(book);
     }
     return (
-        <div className="mx-auto w-[90%] flex  gap-5 justify-center-center">
-            <div className="w-[50%] flex items-center justify-center p-10 bg-gray-200  rounded-lg">
+        <div className="mx-auto lg:w-[90%] flex flex-col lg:flex-row gap-5 lg:justify-center">
+            <div className=" lg:w-[50%] flex items-center justify-center p-10 bg-gray-200  rounded-lg">
                 <img className="w-52" src={image} alt="" />
             </div>
-            <div className="w-[50%]">
+            <div className="lg:w-[50%]">
                 <div>
                     <h1 className="text-2xl">{bookName}</h1>
                     <p>By : {author}</p>

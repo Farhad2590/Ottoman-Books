@@ -7,7 +7,7 @@ const Cards = ({ cards }) => {
 
         <Link to={`/cards/${bookId}`} className="bg-slate-50 border border-gray-300 rounded-lg p-5">
             <div className="flex flex-col justify-center items-center bg-gray-200 py-5 px-5 rounded-lg">
-                <img src={image} alt="" className=" w-44 h-60" />
+                <img src={image} alt="" className=" w-28 h-40 lg:w-44  lg:h-60" />
             </div>
             <div className="flex flex-wrap justify-center mt-2">
                 {tags.map((tag, index) => (
@@ -17,7 +17,7 @@ const Cards = ({ cards }) => {
                 ))}
             </div>
             <div>
-                <h2 className="mb-1 text-xl font-semibold">{bookName}</h2>
+                <h2 className="mb-1 text-lg lg:text-xl font-semibold">{bookName}</h2>
                 <p>By :{author}</p>
             </div>
             <div className="border border-dashed "></div>
