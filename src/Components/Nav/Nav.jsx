@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
     return (
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar justify-between bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,17 +16,18 @@ const Nav = () => {
                             <NavLink to={'/deliveryInfo'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Delivery Info</NavLink>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Book Vibe</a>
+                    <h2 className="text-lg lg:text-xl">Book Vibe</h2>
                 </div>
                 <div className="navbar-center hidden lg:flex ">
-                    <ul className="menu menu-horizontal gap-5 px-1">
+                    <ul className="menu menu-horizontal gap-2">
                         <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Home</NavLink>
                         <NavLink to={'/listedBooks'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Listed Books</NavLink>
                         <NavLink to={'/pagestoread'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Pages To read</NavLink>
+                        <NavLink to={'/bestSeller'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Best Seller</NavLink>
                         <NavLink to={'/deliveryInfo'} className={({ isActive }) => isActive ? 'text-green-500 font-bold btn btn-outline' : 'btn btn-outline-none bg-white'}>Delivery Info</NavLink>
                     </ul>
                 </div>
-                <div className="navbar-end gap-3">
+                <div className="navbar-end gap-2 hidden sm:block">
                     <a className="btn bg-green-500 text-white">Sign In</a>
                     <a className="btn bg-blue-400 text-white">Sign Up</a>
                 </div>

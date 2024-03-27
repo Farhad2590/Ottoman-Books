@@ -18,6 +18,7 @@ import DeliveryInfo from './Pages/DeliveryInfo.jsx'
 import Online from './Components/Online/Online.jsx';
 import Offline from './Components/Offline/Offline.jsx';
 import Error from './Components/Error/Error.jsx';
+import BestSeller from './Pages/BestSeller.jsx';
 
 
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path:"/pagestoread",
         element:<Pagestoread></Pagestoread>,
+      },
+      {
+        path:"/bestSeller",
+        element:<BestSeller></BestSeller>,
       },
       {
         path:"/deliveryInfo",
