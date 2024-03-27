@@ -19,6 +19,8 @@ import Online from './Components/Online/Online.jsx';
 import Offline from './Components/Offline/Offline.jsx';
 import Error from './Components/Error/Error.jsx';
 import BestSeller from './Pages/BestSeller.jsx';
+import OfflineBest from './Components/OfflineBest/OfflineBest.jsx';
+import OnlineBest from './Components/OnlineBest/OnlineBest.jsx';
 
 
 const router = createBrowserRouter([
@@ -53,6 +55,16 @@ const router = createBrowserRouter([
       {
         path:"/bestSeller",
         element:<BestSeller></BestSeller>,
+        children: [
+          {
+            index:true,
+            element:<OnlineBest></OnlineBest>,
+          },
+          {
+            path: 'offlineBest',
+            element: <OfflineBest></OfflineBest>
+          }
+        ]
       },
       {
         path:"/deliveryInfo",
