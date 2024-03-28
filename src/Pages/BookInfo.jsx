@@ -17,18 +17,18 @@ const BookInfo = () => {
         saveWishBook(book);
     }
     return (
-        <div className="mx-auto lg:w-[90%] flex flex-col lg:flex-row gap-5 lg:justify-center">
+        <div className="mx-auto lg:w-[90%] mb-5 flex flex-col lg:flex-row gap-5 lg:justify-center">
             <div className=" lg:w-[50%] flex items-center justify-center p-10 bg-gray-200  rounded-lg">
                 <img className="w-52" src={image} alt="" />
             </div>
             <div className="lg:w-[50%]">
                 <div>
-                    <h1 className="text-2xl">{bookName}</h1>
+                    <h1 className="text-2xl mb-3">{bookName}</h1>
                     <p>By : {author}</p>
                 </div>
-                <div className="border border-dashed "></div>
-                {category}
-                <div className="border border-dashed "></div>
+                <div className="border border-dashed my-5"></div>
+                <p> {category}</p>
+                <div className="border border-dashed my-5"></div>
                 <p><span>Review : </span>{review}</p>
                 <div className="font-bold">
                     Tag:
@@ -38,7 +38,7 @@ const BookInfo = () => {
                         </span>
                     ))}
                 </div>
-                <div className="border border-dashed "></div>
+                <div className="border border-dashed my-5"></div>
                 <div>
                     <p>Number Of Pages : {totalPages}</p>
                     <p>Publisher : {publisher}</p>

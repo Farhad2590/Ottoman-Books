@@ -20,11 +20,11 @@ const Cards = ({ cards }) => {
                 <h2 className="mb-1 text-lg lg:text-xl font-semibold">{bookName}</h2>
                 <p>By :{author}</p>
             </div>
-            <div className="border border-dashed "></div>
+            <div className="border-[2px] border-dashed my-5"></div>
             <div className="flex justify-between">
                 {category}
-                <div className="flex gap-2">
-                    {rating}
+                <div className="flex gap-2 items-center">
+                    <p>{rating}</p>
                     <CiStar />
                 </div>
             </div>
